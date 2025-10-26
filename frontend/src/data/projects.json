@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "María's Seeds Project",
+    "entrepreneur": "María González",
+    "description": "Help María purchase quality seeds and farming equipment to grow organic vegetables in rural Guatemala.",
+    "goal": 1000,
+    "location": "Guatemala",
+    "category": "Agriculture",
+    "imageUrl": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800",
+    "milestones": [
+      {
+        "title": "Purchase Seeds & Equipment",
+        "amount": 400,
+        "deadline": "2025-12-31",
+        "description": "Buy organic seeds, tools, and irrigation equipment"
+      }
+    ]
+  }
+]
