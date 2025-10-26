@@ -1,7 +1,7 @@
 // src/components/WalletConnect.tsx
 
 import { useState, useEffect } from 'react';
-import { isConnected, getAddress } from '@stellar/freighter-api';
+import { isConnected, getAddress, requestAccess } from '@stellar/freighter-api';
 
 interface WalletConnectProps {
   onConnect: (address: string) => void;
@@ -44,8 +44,8 @@ export default function WalletConnect({ onConnect, onDisconnect }: WalletConnect
 
     setIsLoading(true);
     try {
-      if (typeof window !== 'undefined' && (window as any).freighter) {
-        await (window as any).freighter.requestAccess();
+      if (typeof window !== 'undefined') {
+        await requestAccess();
       }
       
       const result = await getAddress();

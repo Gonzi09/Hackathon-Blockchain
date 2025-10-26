@@ -83,7 +83,7 @@ export async function buildInvestmentTransaction(
     .addOperation(
       contract.call(
         'invest',
-        // StellarSdk.nativeToScVal(projectId, { type: 'u32' }),
+        StellarSdk.nativeToScVal(projectId, { type: 'u32' }),
         StellarSdk.Address.fromString(userAddress).toScVal(),
         StellarSdk.nativeToScVal(amountStroops, { type: 'i128' })
       )
