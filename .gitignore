@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+target/
+.cargo/
+
+# Build outputs
+dist/
+*.wasm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
